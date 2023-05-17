@@ -1,7 +1,7 @@
 export default [
   {
     info: 'Tenzies',
-    src: './docs/assets/images/tenzies.png',
+    src: '![Tenzies](./docs/assets/images/tenzies.png)',
     url: 'https://github.com/fktz94/tenzies',
     ghpage: 'https://fktz94.github.io/tenzies/',
   },
