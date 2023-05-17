@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Section from './Section';
 import Button from './Button';
 import StyledList from './StyledList';
+import unlp from '../assets/images/unlp.png';
 
 export default function AboutMe({ handleCurrentPage }) {
   const [verMasEstudios, setVerMasEstudios] = useState(false);
@@ -39,7 +40,7 @@ export default function AboutMe({ handleCurrentPage }) {
         <>
           <div className="my-2 sm:my-6 flex flex-row max-w-[350px] sm:max-w-[400px]">
             <article className="flex flex-col items-center justify-center">
-              <img src="./src/assets/images/unlp.png" className="w-2/5 my-2" alt="Logo FdA" />
+              <img src={unlp} className="w-2/5 my-2" alt="Logo FdA" />
               <p className="text-center">Licenciatura en Música</p>
               <p className="text-xs my-1 text-[color:var(--secondary-color)]">2013 - 2021</p>
               <a
@@ -52,7 +53,7 @@ export default function AboutMe({ handleCurrentPage }) {
               </a>
             </article>
             <article className="flex flex-col items-center justify-center">
-              <img src="./src/assets/images/unlp.png" className="w-2/5 my-2" alt="Logo FdA" />
+              <img src={unlp} className="w-2/5 my-2" alt="Logo FdA" />
               <p className="text-center">Profesorado en Música</p>
               <p className="text-xs my-1 text-[color:var(--secondary-color)]">2013 - 2021</p>
               <a

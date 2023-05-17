@@ -4,6 +4,14 @@ import MusicSection from './MusicSection';
 import StyledList from './StyledList';
 import Cards from './Cards';
 
+import ritus from '../assets/images/ritus.jpg';
+import lospuentes from '../assets/images/lospuentes.jpg';
+import tripy from '../assets/images/tripy.jpg';
+import partefugaz from '../assets/images/partefugaz.jpg';
+import paraisoroto from '../assets/images/paraisoroto.jpg';
+import dubs from '../assets/images/dubs.jpg';
+import bass from '../assets/images/bass.png';
+
 export default function Musician({ handleCurrentPage }) {
   if (window.scrollY > 0) window.scrollTo(0, 0);
 
@@ -11,32 +19,32 @@ export default function Musician({ handleCurrentPage }) {
   const participacionesData = [
     {
       info: 'Ritus Sequoia (2018)',
-      src: './docs/assets/images/ritus.jpg',
+      src: ritus,
       url: 'https://youtu.be/4cbX4XRv9oo',
     },
     {
       info: 'Los Puentes - Abres (2019)',
-      src: './docs/assets/images/lospuentes.jpg',
+      src: lospuentes,
       url: 'https://youtu.be/jUJgLLlJJl0',
     },
     {
       info: 'Tripy Dubs - Tripy (2019)',
-      src: './docs/assets/images/tripy.jpg',
+      src: tripy,
       url: 'https://youtu.be/GOT02ZbKTBI',
     },
     {
       info: 'Banda Especia - Parte Fugaz (2020)',
-      src: './docs/assets/images/partefugaz.jpg',
+      src: partefugaz,
       url: 'https://youtu.be/SK4D5FfEnz0',
     },
     {
       info: 'Banda Especia - Paraíso Roto (2020)',
-      src: './docs/assets/images/paraisoroto.jpg',
+      src: paraisoroto,
       url: 'https://youtu.be/0C-RiV-4iDM',
     },
     {
       info: 'Tripy Dubs - Dubs (2023)',
-      src: './docs/assets/images/dubs.jpg',
+      src: dubs,
       url: 'https://youtube.com/playlist?list=OLAK5uy_ns0hV2nozB_DpRZSZBgJUDQFi1MxRT-e4',
     },
   ];
@@ -101,7 +109,7 @@ export default function Musician({ handleCurrentPage }) {
         />
       </nav>
       <img
-        src="./docs/assets/images/bass.png"
+        src={bass}
         className="hidden fixed bottom-0 right-0 lg:block opacity-30 brightness-0 hover:brightness-50 transition duration-300"
         alt="bass profile pic"
       />

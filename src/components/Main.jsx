@@ -1,6 +1,9 @@
 import socialMediaData from '../socialMediaData';
 import Button from './Button';
 
+import portfolioMain from '../assets/images/portfolio-main.png';
+import react from '../assets/images/react.svg';
+
 export default function Main() {
   const goToSection = (section) => {
     const proyectsOffsetY = document.getElementById(section).offsetTop;
@@ -39,12 +42,7 @@ export default function Main() {
       </article>
       <article className="relative w-full h-auto max-w-[180px] md:max-w-[220px] lg:max-w-[300px]">
         <div id="main-bg" className="absolute h-32 w-32 rounded-full bg-[color:var(--black-hover-color)]" />
-        <img
-          id="main-img"
-          className="absolute brightness-150"
-          src="./src/assets/images/portfolio-main.png"
-          alt="foto de perfil"
-        />
+        <img id="main-img" className="absolute brightness-150" src={portfolioMain} alt="foto de perfil" />
       </article>
       <article className="hidden items-center md:flex flex-col justify-around md:max-w-[250px] z-50">
         <h2 className="text-2xl text-center font-light lg:text-3xl text-[color:var(--secondary-hover-color)]">
@@ -62,7 +60,7 @@ export default function Main() {
         />
       </article>
       <img
-        src="./src/assets/images/react.svg"
+        src={react}
         alt="React Logo"
         className="hidden md:block absolute top-1/2 right-0 h-96 -translate-y-1/2  translate-x-1/2 opacity-10 brightness-0"
       />
