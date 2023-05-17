@@ -27,10 +27,10 @@ export default function Header({ handleCurrentPage }) {
   return (
     <>
       <header className="px-6 py-4 md:px-12 md:py-10 lg:px-16 lg:py-14 flex justify-between items-center">
-        <span className="text-4xl h-max lg:text-5xl">
+        <a className="text-4xl h-max lg:text-5xl" href="/">
           <b>FO</b>
           <b className="text-[color:var(--secondary-color)]">.</b>
-        </span>
+        </a>
         <nav className="hidden md:flex md:gap-4 lg:gap-6">{navLinks}</nav>
         <Hamburger state={hamburgerState} onClick={handleHamburgerClick} />
       </header>
