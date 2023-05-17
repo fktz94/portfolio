@@ -11,32 +11,32 @@ export default function Musician({ handleCurrentPage }) {
   const participacionesData = [
     {
       info: 'Ritus Sequoia (2018)',
-      src: './src/assets/ritus.jpg',
+      src: './docs/assets/ritus.jpg',
       url: 'https://youtu.be/4cbX4XRv9oo',
     },
     {
       info: 'Los Puentes - Abres (2019)',
-      src: './src/assets/lospuentes.jpg',
+      src: './docs/assets/lospuentes.jpg',
       url: 'https://youtu.be/jUJgLLlJJl0',
     },
     {
       info: 'Tripy Dubs - Tripy (2019)',
-      src: './src/assets/tripy.jpg',
+      src: './docs/assets/tripy.jpg',
       url: 'https://youtu.be/GOT02ZbKTBI',
     },
     {
       info: 'Banda Especia - Parte Fugaz (2020)',
-      src: './src/assets/partefugaz.jpg',
+      src: './docs/assets/partefugaz.jpg',
       url: 'https://youtu.be/SK4D5FfEnz0',
     },
     {
       info: 'Banda Especia - Paraíso Roto (2020)',
-      src: './src/assets/paraisoroto.jpg',
+      src: './docs/assets/paraisoroto.jpg',
       url: 'https://youtu.be/0C-RiV-4iDM',
     },
     {
       info: 'Tripy Dubs - Dubs (2023)',
-      src: './src/assets/dubs.jpg',
+      src: './docs/assets/dubs.jpg',
       url: 'https://youtube.com/playlist?list=OLAK5uy_ns0hV2nozB_DpRZSZBgJUDQFi1MxRT-e4',
     },
   ];
@@ -101,7 +101,7 @@ export default function Musician({ handleCurrentPage }) {
         />
       </nav>
       <img
-        src="./src/assets/bass.png"
+        src="./docs/assets/bass.png"
         className="hidden fixed bottom-0 right-0 lg:block opacity-30 brightness-0 hover:brightness-50 transition duration-300"
         alt="bass profile pic"
       />
