@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import socialMediaData from '../socialMediaData';
 import Button from './Button';
 
@@ -5,9 +6,24 @@ import portfolioMain from '../assets/images/portfolio-main.png';
 import react from '../assets/images/react.svg';
 
 export default function Main() {
+  // agregar padding al scrollTo para ajustar, debido al cambio de tamaño del header
+  const [windowSize, detectSize] = useState(window.innerWidth);
+  const getSize = () => {
+    detectSize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', getSize);
+    return () => {
+      window.removeEventListener('resize', getSize);
+    };
+  }, [windowSize]);
+
+  const paddingAdded = windowSize > 1024 ? 64 : 56;
+
   const goToSection = (section) => {
     const proyectsOffsetY = document.getElementById(section).offsetTop;
-    window.scrollTo(0, proyectsOffsetY);
+    window.scrollTo(0, proyectsOffsetY - paddingAdded);
   };
 
   const rightArticleData = [
@@ -44,8 +60,8 @@ export default function Main() {
         <div id="main-bg" className="absolute h-32 w-32 rounded-full bg-[color:var(--black-hover-color)]" />
         <img id="main-img" className="absolute brightness-150" src={portfolioMain} alt="foto de perfil" />
       </article>
-      <article className="hidden items-center md:flex flex-col justify-around md:max-w-[250px] z-50">
-        <h2 className="text-2xl text-center font-light lg:text-3xl text-[color:var(--secondary-hover-color)]">
+      <article className="hidden items-center md:flex flex-col justify-between md:max-w-[250px] z-50">
+        <h2 className="text-xl text-center font-light lg:text-2xl lg:tracking-wider text-[color:var(--secondary-hover-color)]">
           Frontend Web Developer
         </h2>
         {rightArticleData.map((item) => (
@@ -54,8 +70,8 @@ export default function Main() {
           </p>
         ))}
         <Button
-          text="Proyectos"
-          buttonStyle="text-xs px-4 mt-4 self-end py-1 tracking-widest"
+          text="PROYECTOS"
+          buttonStyle="my-4 px-4 py-3 text-xs font-semibold tracking-widest max-w-fit"
           handleClick={() => goToSection('proyects')}
         />
       </article>

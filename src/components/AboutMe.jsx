@@ -16,7 +16,7 @@ export default function AboutMe({ handleCurrentPage }) {
   const aboutMeList = [
     'Frontend React Developer Jr.',
     'Disciplina de la constancia',
-    'Curioso y obstinado',
+    'Curioso y dedicado',
     'Aprendiz autodidacta',
     'Español nativo. Inglés y francés fluido',
     'Prolijo y ordenado',

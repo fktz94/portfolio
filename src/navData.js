@@ -4,7 +4,7 @@ export default [
     id: 'skills',
   },
   {
-    title: 'SOBRE MI',
+    title: 'SOBRE MÍ',
     id: 'about-me',
   },
   {

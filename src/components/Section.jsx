@@ -4,7 +4,7 @@ export default function Section({ description, id, innerContent, title }) {
   return (
     <section
       id={id}
-      className="main-section px-6 py-4 sm:py-6 flex flex-col items-center scroll-m-[12.50rem] md:scroll-m-0 md:p-10 "
+      className="main-section px-6 py-4 sm:py-6 flex flex-col items-center scroll-m-[255px] md:scroll-m-[55px] md:p-10 "
     >
       {/* Título de la sección */}
       <h2 className="mt-2 sm:text-lg font-medium tracking-wider text-[color:var(--secondary-color)]">

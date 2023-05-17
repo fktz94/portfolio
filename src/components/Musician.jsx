@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import Button from './Button';
+// import PropTypes from 'prop-types';
+// import Button from './Button';
 import MusicSection from './MusicSection';
 import StyledList from './StyledList';
 import Cards from './Cards';
@@ -12,9 +12,7 @@ import paraisoroto from '../assets/images/paraisoroto.jpg';
 import dubs from '../assets/images/dubs.jpg';
 import bass from '../assets/images/bass.png';
 
-export default function Musician({ handleCurrentPage }) {
-  if (window.scrollY > 0) window.scrollTo(0, 0);
-
+export default function Musician() {
   // Parte de 'Participaciones'
   const participacionesData = [
     {
@@ -101,13 +99,6 @@ export default function Musician({ handleCurrentPage }) {
 
   return (
     <>
-      <nav className="flex justify-center lg:my-5">
-        <Button
-          buttonStyle="my-4 px-3 py-2 text-sm tracking-wider"
-          text="Volver al inicio"
-          handleClick={handleCurrentPage}
-        />
-      </nav>
       <img
         src={bass}
         className="hidden fixed bottom-0 right-0 lg:block opacity-30 brightness-0 hover:brightness-50 transition duration-300"
@@ -121,7 +112,3 @@ export default function Musician({ handleCurrentPage }) {
     </>
   );
 }
-
-Musician.propTypes = {
-  handleCurrentPage: PropTypes.func.isRequired,
-};
