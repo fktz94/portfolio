@@ -58,6 +58,13 @@
   }
 }
 
+/* Clase para cuando el link de cada section esté activo */
+
+a.is-active {
+  border-color: var(--secondary-hover-color);
+  color: var(--white-hover-color);
+}
+
 /* Intercala los colores de las sections */
 .main-section:nth-child(even) {
   background-color: var(--black-color);

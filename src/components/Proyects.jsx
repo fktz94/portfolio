@@ -20,6 +20,7 @@ export default function Proyect() {
 
   // Cantidad de proyectos a renderizar dependiendo de la mediaquery
   const proyects = windowWidth < 640 ? 3 : 4;
+  const paddingAdded = windowWidth > 1024 ? 64 : 56;
 
   // useState para lso proyectos que se renderizan
   const [showedProyects, setShowedProyects] = useState(proyects);
@@ -32,7 +33,7 @@ export default function Proyect() {
   // Botón 'Ver Menos' para volver a los 3 primeros proyectos que se muestran -> MOBILE
   const removeShowedProyects = () => {
     const proyectsOffsetY = document.getElementById('proyects').offsetTop;
-    window.scrollTo(0, proyectsOffsetY);
+    window.scrollTo(0, proyectsOffsetY - paddingAdded);
     setShowedProyects(proyects);
   };
 

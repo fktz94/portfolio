@@ -19,21 +19,24 @@ const pages = {
 };
 
 export default function App() {
+  if (window.scrollY > 0) window.scrollTo(0, 0);
+
   const [currentPage, setCurrentPage] = useState('home');
   const CurrentPage = pages[currentPage].component;
 
   const [currentSection, setCurrentSection] = useState('');
 
-  useEffect(() => setCurrentSection(''), []);
-
-  if (window.scrollY > 0) window.scrollTo(0, 0);
+  useEffect(() => {
+    setCurrentPage('home');
+    setCurrentSection('');
+  }, []);
 
   return (
     <>
       <Header
-        handleCurrentPage={(page) => setCurrentPage(page)}
-        currentPage={currentPage}
         currentSection={currentSection}
+        handleCurrentPage={(page) => setCurrentPage(page)}
+        handleCurrentSection={(section) => setCurrentSection(section)}
       />
       <CurrentPage handleCurrentPage={() => setCurrentPage('musician')} />
       <ScrollTop />
