@@ -1,30 +1,30 @@
 export default [
   {
     info: 'HTML',
-    src: './docs/assets/html.svg',
+    src: './docs/assets/images/html.svg',
   },
   {
     info: 'JavaScript',
-    src: './docs/assets/js.svg',
+    src: './docs/assets/images/js.svg',
   },
   {
     info: 'CSS',
-    src: './docs/assets/css.svg',
+    src: './docs/assets/images/css.svg',
   },
   {
     info: 'React',
-    src: './docs/assets/react.svg',
+    src: './docs/assets/images/react.svg',
   },
   {
     info: 'Tailwind',
-    src: './docs/assets/tailwind.svg',
+    src: './docs/assets/images/tailwind.svg',
   },
   {
     info: 'Git',
-    src: './docs/assets/git.svg',
+    src: './docs/assets/images/git.svg',
   },
   {
     info: 'GitHub',
-    src: './docs/assets/github.svg',
+    src: './docs/assets/images/github.svg',
   },
 ];

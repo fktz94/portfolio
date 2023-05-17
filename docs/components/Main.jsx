@@ -42,7 +42,7 @@ export default function Main() {
         <img
           id="main-img"
           className="absolute brightness-150"
-          src="./src/assets/portfolio-main.png"
+          src="./src/assets/images/portfolio-main.png"
           alt="foto de perfil"
         />
       </article>
@@ -62,7 +62,7 @@ export default function Main() {
         />
       </article>
       <img
-        src="./src/assets/react.svg"
+        src="./src/assets/images/react.svg"
         alt="React Logo"
         className="hidden md:block absolute top-1/2 right-0 h-96 -translate-y-1/2  translate-x-1/2 opacity-10 brightness-0"
       />

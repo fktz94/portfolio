@@ -1,22 +1,18 @@
 export default [
   {
     title: 'facundo.ortiz@live.com',
-    to: '/',
-    icon: './docs/assets/email.svg',
+    icon: './docs/assets/images/email.svg',
   },
   {
     title: '+54 2284 470537',
-    to: '/',
-    icon: './docs/assets/phone.svg',
+    icon: './docs/assets/images/phone.svg',
   },
   {
     title: 'Facundo Ortiz',
-    to: '/',
-    icon: './docs/assets/facebook.svg',
+    icon: './docs/assets/images/facebook.svg',
   },
   {
     title: '@facund.ortiz',
-    to: '/',
-    icon: './docs/assets/instagram.svg',
+    icon: './docs/assets/images/instagram.svg',
   },
 ];
