@@ -33,7 +33,11 @@ export default function Main() {
   ];
 
   return (
-    <main className="relative px-6 py-4 sm:pb-8 md:px-12 md:py-14 md:mb-10 flex justify-center overflow-hidden">
+    <main
+      className="relative px-6 py-4 sm:pb-8 md:px-12 md:py-14 md:mb-10 flex justify-center overflow-hidden"
+      id="main"
+      data-scroll
+    >
       <article className="w-full max-w-[250px] flex-col justify-between sm:max-w-[350px] md:min-w-[250px] md:max-w-[350px] md:flex lg:max-w-[410px]">
         <h1 className="text-4xl font-medium tracking-wide md:text-5xl md:font-semibold md:tracking-tight ">
           Facundo
@@ -51,7 +55,7 @@ export default function Main() {
           ))}
         </ul>
         <Button
-          buttonStyle="my-4 px-4 py-3 text-xs font-semibold tracking-widest max-w-fit lg:mt-10 lg:ml-12"
+          buttonStyle="my-4 px-4 py-3 text-xs font-semibold tracking-widest max-w-fit lg:mt-10"
           text="CONTACTO"
           handleClick={() => goToSection('contact')}
         />

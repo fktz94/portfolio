@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
-// import Main from './components/Main';
-// import Sections from './components/Sections';
 import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
 import Musician from './components/Musician';
@@ -24,42 +22,49 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const CurrentPage = pages[currentPage].component;
 
-  const [currentSection, setCurrentSection] = useState('');
-
+  // useEffect para manejar el active de los navlinks, tipo scrollSpy
   useEffect(() => {
-    setCurrentPage('home');
-    setCurrentSection('');
-  }, []);
+    const $musicianLink = document.querySelector('nav > a[href="#musician"]');
+    if (currentPage === 'musician') $musicianLink.classList.add('is-active');
+    if (!(currentPage === 'musician')) $musicianLink.classList.remove('is-active');
+    const $sections = document.querySelectorAll('[data-scroll]');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const {
+            target: { id },
+            isIntersecting,
+          } = entry;
+
+          const $link = document.querySelector(`nav > a[href="#${id}"]`);
+          if (isIntersecting && $link) {
+            $link.classList.add('is-active');
+          } else if (!isIntersecting && $link) {
+            $link.classList.remove('is-active');
+          }
+        });
+      },
+      { rootMargin: '-50px', threshold: [0.3] },
+    );
+
+    $sections.forEach((el) => {
+      observer.observe(el);
+    });
+
+    return function cleanUp() {
+      document.querySelectorAll('nav > a').forEach((item) => item.classList.remove('is-active'));
+      $sections.forEach((el) => {
+        observer.disconnect(el);
+      });
+    };
+  }, [currentPage]);
 
   return (
     <>
-      <Header
-        currentSection={currentSection}
-        handleCurrentPage={(page) => setCurrentPage(page)}
-        handleCurrentSection={(section) => setCurrentSection(section)}
-      />
+      <Header currentPage={currentPage} handleCurrentPage={(page) => setCurrentPage(page)} />
       <CurrentPage handleCurrentPage={() => setCurrentPage('musician')} />
       <ScrollTop />
       <Footer />
     </>
   );
 }
-
-// const [musicSection, setMusicSection] = useState(false);
-// const toggleMusicSection = () => {
-//   setMusicSection((oldMusicSection) => setMusicSection(!oldMusicSection));
-// };
-
-// return !musicSection ? (
-//   <>
-//     <Header toggleMusicSection={toggleMusicSection} />
-//     <Main />
-//     <Sections toggleMusicSection={toggleMusicSection} />
-//     <Footer />
-//   </>
-// ) : (
-//   <>
-//     <Musician toggleMusicSection={toggleMusicSection} />
-//     <ScrollTop />
-//   </>
-// );
