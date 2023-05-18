@@ -50,7 +50,7 @@ export default function Musician() {
   // (clases que se le envían al componente Card)
   const cardStyles = {
     figureStyle:
-      'my-6 max-w-[200px] z-50 sm:max-w-[45%] justify-between md:max-w-[256px] bg-[color:var(--black-hover-color)]',
+      'my-6 max-w-[200px] z-50 sm:max-w-[45%] justify-between md:max-w-[256px] bg-[color:var(--black-hover-color)] hover:scale-125  hover:bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] transition',
     imgStyle: 'p-2 rounded-2xl',
     figcaptionStyle: 'text-xl my-1 text-center',
   };
@@ -66,7 +66,7 @@ export default function Musician() {
             src={src}
             cardStyles={cardStyles}
             link={{
-              classList: 'text-sm my-1  hover:text-[color:var(--secondary-hover-color)]',
+              classList: 'text-sm my-1 text-[color:var(--white-color)] hover:text-[color:var(--secondary-hover-color)]',
               text: 'Ir al disco',
               url,
             }}

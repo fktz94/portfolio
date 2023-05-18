@@ -35,7 +35,7 @@ export default function Header({ currentPage, handleCurrentPage }) {
       className="py-2 text-center tracking-wider hover:bg-[color:var(--black-hover-color)] md:hover:bg-transparent md:border-b-2 transition-colors md:pb-1 md:border-transparent md:hover:border-[color:var(--secondary-hover-color)] hover:text-[color:var(--secondary-hover-color)] md:hover:text-[color:var(--white-hover-color)] md:tracking-widest md:text-sm lg:text-base"
       href={`#${id}`}
       onClick={() => {
-        handleHamburgerClick();
+        if (navBarCollapse) handleHamburgerClick();
         if (id === 'musician') handleCurrentPage('musician');
         if (id !== 'musician') handleCurrentPage('home');
       }}

@@ -177,3 +177,62 @@ a.is-active {
     grid-row: 2 / span 2;
   }
 }
+
+/* Skills cards hover animation  */
+
+.skills-animation:hover {
+  animation-name: skills-animation;
+  animation-duration: 500ms;
+  background-color: var(--black-color);
+  color: var(--secondary-color);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skills-animation {
+  0% {
+    background-color: var(--black-color);
+    color: var(--secondary-color);
+  }
+  33% {
+    scale: 1.2;
+    transform: rotateZ(5deg);
+  }
+  66% {
+    scale: 1.4;
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    scale: 1.6;
+    transform: rotateZ(0deg);
+  }
+}
+/* Discs cards hover animation  */
+
+.discs-animation:hover {
+  animation-name: skills-animation;
+  animation-duration: 500ms;
+  background-color: var(--black-color);
+  color: var(--secondary-color);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skills-animation {
+  0% {
+    background-color: var(--black-color);
+    color: var(--secondary-color);
+  }
+  33% {
+    scale: 1.2;
+    transform: rotateZ(5deg);
+  }
+  66% {
+    scale: 1.4;
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    scale: 1.6;
+    transform: rotateZ(0deg);
+  }
+}

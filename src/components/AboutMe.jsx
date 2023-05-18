@@ -76,7 +76,7 @@ export default function AboutMe({ handleCurrentPage }) {
     </>
   );
 
-  return <Section id="about-me" title="Sobre mi" innerContent={innerContent} />;
+  return <Section id="about-me" title="Sobre mí" innerContent={innerContent} />;
 }
 
 AboutMe.propTypes = {
