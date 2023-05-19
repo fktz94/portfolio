@@ -43,7 +43,7 @@ export default function Proyect() {
   // Clases que se le envían al componente Card
   const cardStyles = {
     figureStyle:
-      'my-4 max-w-[400px] sm:w-[47%] bg-[color:var(--grey-color)] hover:scale-125  hover:bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] transition duration-300',
+      'my-4 max-w-[400px] min-h-[256px] sm:w-[46%] bg-[color:var(--grey-color)] hover:scale-125 hover:bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] transition duration-300',
     imgStyle: 'p-2 rounded-2xl',
     figcaptionStyle: 'my-1 text-xl text-center',
   };
