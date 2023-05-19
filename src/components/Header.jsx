@@ -51,7 +51,7 @@ export default function Header({ currentPage, handleCurrentPage }) {
           isMusicSection ? 'lg:my-0' : 'my-3 md:my-10 lg:my-14'
         }`}
       >
-        <a className="text-4xl h-max lg:text-5xl" href="/">
+        <a className="text-4xl h-max lg:text-5xl" href="index.html">
           <b>FO</b>
           <b className="text-[color:var(--secondary-color)]">.</b>
         </a>
