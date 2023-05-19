@@ -5,7 +5,7 @@ export default function Cards({ cardStyles: { figcaptionStyle, figureStyle, imgS
 
   return (
     <figure
-      className={`flex flex-col items-center justify-center mx-2 my-1 p-2 border-b-2 border-r-2 border-solid rounded-2xl border-[color:var(--secondary-hover-color)] ${figureStyle}`}
+      className={`flex flex-col items-center justify-evenly mx-2 my-1 p-2 border-b-2 border-r-2 border-solid rounded-2xl border-[color:var(--secondary-hover-color)] ${figureStyle}`}
     >
       <img src={src} alt={info} className={imgStyle} />
       <figcaption className={figcaptionStyle}>{info}</figcaption>
