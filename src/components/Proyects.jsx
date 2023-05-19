@@ -22,7 +22,7 @@ export default function Proyect() {
   const proyects = windowWidth < 640 ? 3 : 4;
   const paddingAdded = windowWidth > 1024 ? 64 : 56;
 
-  // useState para lso proyectos que se renderizan
+  // useState para los proyectos que se renderizan
   const [showedProyects, setShowedProyects] = useState(proyects);
 
   // Botón 'Ver Más' muestra 3 (o 4) proyectos más por cada click. Si no hay más, desaparece
@@ -42,7 +42,8 @@ export default function Proyect() {
 
   // Clases que se le envían al componente Card
   const cardStyles = {
-    figureStyle: 'my-4 max-w-[400px] sm:w-[47%] bg-[color:var(--grey-color)]',
+    figureStyle:
+      'my-4 max-w-[400px] sm:w-[47%] bg-[color:var(--grey-color)] hover:scale-125  hover:bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] transition duration-300',
     imgStyle: 'p-2 rounded-2xl',
     figcaptionStyle: 'my-1 text-xl text-center',
   };
@@ -60,8 +61,9 @@ export default function Proyect() {
               ghpage={ghpage}
               cardStyles={cardStyles}
               link={{
-                classList: 'text-sm my-1 hover:text-[color:var(--secondary-hover-color)]',
-                text: 'Ir al repo',
+                classList:
+                  'text-sm my-1 text-[color:var(--white-color)] hover:text-[color:var(--secondary-hover-color)]',
+                text: 'Ir al repositorio',
                 url,
               }}
             />
@@ -70,14 +72,14 @@ export default function Proyect() {
 
       {showedProyects > proyects && (
         <Button
-          buttonStyle="my-3 px-5 py-2 text-sm tracking-wider "
+          buttonStyle="my-3 px-5 py-2 text-sm tracking-wider hover:bg-[color:var(--grey-color)]"
           handleClick={removeShowedProyects}
           text="Ver menos..."
         />
       )}
       {showedProyects < proyectData.length && (
         <Button
-          buttonStyle="my-3 px-5 py-2 text-sm tracking-wider "
+          buttonStyle="my-3 px-5 py-2 text-sm tracking-wider hover:bg-[color:var(--grey-color)]"
           handleClick={handleShowedProyects}
           text="Ver mas..."
         />

@@ -19,7 +19,7 @@ export default function Cards({ cardStyles: { figcaptionStyle, figureStyle, imgS
 
       {ghpage && (
         <a href={ghpage} className={classList} target="_blank" rel="noreferrer">
-          Ver GH page
+          Visitar el sitio
         </a>
       )}
     </figure>
