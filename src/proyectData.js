@@ -1,3 +1,4 @@
+import portfolio from './assets/images/portfolio.png';
 import tenzies from './assets/images/tenzies.png';
 import exchange from './assets/images/exchange.png';
 import ejerciciosdom from './assets/images/ejerciciosdom.png';
@@ -8,6 +9,12 @@ import simondice from './assets/images/simondice.png';
 import netflix from './assets/images/netflix.png';
 
 export default [
+  {
+    info: 'Portfolio',
+    src: portfolio,
+    url: 'https://github.com/fktz94/portfolio',
+    ghpage: 'https://fktz94.github.io/portfolio/',
+  },
   {
     info: 'Tenzies',
     src: tenzies,
