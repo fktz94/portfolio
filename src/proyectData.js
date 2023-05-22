@@ -16,22 +16,16 @@ export default [
     ghpage: 'https://fktz94.github.io/portfolio/',
   },
   {
-    info: 'Tenzies',
-    src: tenzies,
-    url: 'https://github.com/fktz94/tenzies',
-    ghpage: 'https://fktz94.github.io/tenzies/',
-  },
-  {
     info: 'Intercambio de Divisas',
     src: exchange,
     url: 'https://github.com/fktz94/interfaz-exchange',
     ghpage: 'https://fktz94.github.io/interfaz-exchange/',
   },
   {
-    info: 'Manejo del DOM',
-    src: ejerciciosdom,
-    url: 'https://github.com/fktz94/DOM-Exercises',
-    ghpage: 'https://fktz94.github.io/DOM-Exercises/',
+    info: 'Tenzies',
+    src: tenzies,
+    url: 'https://github.com/fktz94/tenzies',
+    ghpage: 'https://fktz94.github.io/tenzies/',
   },
   {
     info: 'PokeDex',
@@ -40,16 +34,22 @@ export default [
     ghpage: 'https://fktz94.github.io/pokedex-con-modules/',
   },
   {
+    info: 'Manejo del DOM',
+    src: ejerciciosdom,
+    url: 'https://github.com/fktz94/DOM-Exercises',
+    ghpage: 'https://fktz94.github.io/DOM-Exercises/',
+  },
+  {
     info: 'TicTacToe',
     src: tictactoe,
-    url: 'https://github.com/fktz94/tictactoe',
-    ghpage: 'https://fktz94.github.io/tictactoe/',
+    url: 'https://github.com/fktz94/TicTacToe',
+    ghpage: 'https://fktz94.github.io/TicTacToe/',
   },
   {
     info: 'Memotest',
     src: memotest,
-    url: 'https://github.com/fktz94/memotest',
-    ghpage: 'https://fktz94.github.io/memotest/',
+    url: 'https://github.com/fktz94/Memotest',
+    ghpage: 'https://fktz94.github.io/Memotest/',
   },
   {
     info: 'Simón Dice',
