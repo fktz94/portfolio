@@ -7,8 +7,15 @@ import tictactoe from './assets/images/tictactoe.png';
 import memotest from './assets/images/memotest.png';
 import simondice from './assets/images/simondice.png';
 import netflix from './assets/images/netflix.png';
+import moviefinder from './assets/images/moviefinder.png';
 
 export default [
+  {
+    info: 'Buscador de películas',
+    src: moviefinder,
+    url: 'https://github.com/fktz94/movie-finder',
+    ghpage: 'https://fktz94.github.io/movie-finder/',
+  },
   {
     info: 'Portfolio',
     src: portfolio,
