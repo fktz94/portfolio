@@ -27,7 +27,7 @@ export default function ScrollTop() {
 
   return (
     <button
-      className={`mx-[2%] my-[5%] h-16 w-16 z-[999] cursor-auto rounded-full flex items-center justify-center text-3xl fixed bottom-0 right-0 border border-[color:var(--secondary-hover-color)] bg-[color:var(--grey-hover-color)] transition duration-300 ${isVisible}`}
+      className={`mx-[2%] my-[5%] h-16 w-16 z-[999] cursor-auto rounded-full flex items-center justify-center text-3xl fixed bottom-0 right-0 border border-[color:var(--secondary-hover-color)] bg-[color:var(--grey-hover-color)] transition duration-300 hover:bg-[color:var(--black-hover-color)] hover:scale-125 ${isVisible}`}
       type="button"
       onClick={handleClick}
     >
