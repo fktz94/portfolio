@@ -15,11 +15,12 @@ export default function AboutMe({ handleCurrentPage }) {
 
   const aboutMeList = [
     'Frontend React Developer Jr.',
-    'Disciplina de la constancia',
-    'Curioso y dedicado',
-    'Aprendiz autodidacta',
-    'Español nativo. Inglés y francés fluido',
-    'Prolijo y ordenado',
+    'Discipline of perseverance',
+    'Curious and dedicated',
+    'Self-taught learner',
+    'Native Spanish speaker.',
+    'Fluent in English and French',
+    'Neat and organized',
   ];
 
   const innerContent = (
@@ -32,7 +33,7 @@ export default function AboutMe({ handleCurrentPage }) {
 
       <Button
         buttonStyle="my-2 px-2 w-full max-w-[300px] sm:max-w-[350px] py-1 text-sm tracking-wider"
-        text={!verMasEstudios ? 'Ver otros estudios académicos...' : 'Cerrar'}
+        text={!verMasEstudios ? 'Other Academics Studies' : 'Close'}
         handleClick={handleClickVerMasEstudios}
       />
 
@@ -41,7 +42,7 @@ export default function AboutMe({ handleCurrentPage }) {
           <div className="my-2 sm:my-6 flex flex-row max-w-[350px] sm:max-w-[400px]">
             <article className="flex flex-col items-center justify-center">
               <img src={unlp} className="w-2/5 my-2" alt="Logo FdA" />
-              <p className="text-center">Licenciatura en Música</p>
+              <p className="text-center">Bachelor&#39;s Degree in Music</p>
               <p className="text-xs my-1 text-[color:var(--secondary-color)]">2013 - 2021</p>
               <a
                 className="hover:text-[color:var(--secondary-color)]"
@@ -54,7 +55,7 @@ export default function AboutMe({ handleCurrentPage }) {
             </article>
             <article className="flex flex-col items-center justify-center">
               <img src={unlp} className="w-2/5 my-2" alt="Logo FdA" />
-              <p className="text-center">Profesorado en Música</p>
+              <p className="text-center">Teacher Certification in Music</p>
               <p className="text-xs my-1 text-[color:var(--secondary-color)]">2013 - 2021</p>
               <a
                 className="hover:text-[color:var(--secondary-color)]"
@@ -67,7 +68,7 @@ export default function AboutMe({ handleCurrentPage }) {
             </article>
           </div>
           <Button
-            text="Ver apartado musical"
+            text="See Music Section"
             buttonStyle="mt-2 px-2 sm:px-4 py-1 text-xs tracking-wider"
             handleClick={handleCurrentPage}
           />
@@ -76,7 +77,7 @@ export default function AboutMe({ handleCurrentPage }) {
     </>
   );
 
-  return <Section id="about-me" title="Sobre mí" innerContent={innerContent} />;
+  return <Section id="about-me" title="About Me" innerContent={innerContent} />;
 }
 
 AboutMe.propTypes = {

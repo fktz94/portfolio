@@ -11,7 +11,7 @@ import moviefinder from './assets/images/moviefinder.png';
 
 export default [
   {
-    info: 'Buscador de películas',
+    info: 'Movie Finder',
     src: moviefinder,
     url: 'https://github.com/fktz94/movie-finder',
     ghpage: 'https://fktz94.github.io/movie-finder/',
@@ -23,7 +23,7 @@ export default [
     ghpage: 'https://fktz94.github.io/portfolio/',
   },
   {
-    info: 'Intercambio de Divisas',
+    info: 'Currency Exchange',
     src: exchange,
     url: 'https://github.com/fktz94/interfaz-exchange',
     ghpage: 'https://fktz94.github.io/interfaz-exchange/',
@@ -41,7 +41,7 @@ export default [
     ghpage: 'https://fktz94.github.io/pokedex-con-modules/',
   },
   {
-    info: 'Manejo del DOM',
+    info: 'DOM Management',
     src: ejerciciosdom,
     url: 'https://github.com/fktz94/DOM-Exercises',
     ghpage: 'https://fktz94.github.io/DOM-Exercises/',
@@ -59,13 +59,13 @@ export default [
     ghpage: 'https://fktz94.github.io/Memotest/',
   },
   {
-    info: 'Simón Dice',
+    info: 'Simon Says',
     src: simondice,
     url: 'https://github.com/fktz94/tictactoe',
     ghpage: 'https://fktz94.github.io/simon-dice/',
   },
   {
-    info: 'Clon de Netflix',
+    info: 'Netflix Clon',
     src: netflix,
     url: 'https://github.com/fktz94/faka-tv',
     ghpage: 'https://fktz94.github.io/faka-tv/',

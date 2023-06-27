@@ -19,7 +19,5 @@ export default function Skills() {
     </div>
   );
 
-  return (
-    <Section id="skills" title="Skills" description="Tecnologías con las que trabajo" innerContent={innerContent} />
-  );
+  return <Section id="skills" title="Skills" description="Technologies I work with" innerContent={innerContent} />;
 }

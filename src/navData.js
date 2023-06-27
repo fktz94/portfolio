@@ -4,7 +4,7 @@ export default [
     id: 'skills',
   },
   {
-    title: 'SOBRE MÍ',
+    title: 'ABOUT ME',
     id: 'about-me',
   },
   {
@@ -12,11 +12,11 @@ export default [
     id: 'proyects',
   },
   {
-    title: 'CONTACTO',
+    title: 'CONTACT',
     id: 'contact',
   },
   {
-    title: 'MÚSICO',
+    title: 'MUSICIAN',
     id: 'musician',
   },
 ];

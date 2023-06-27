@@ -9,5 +9,5 @@ export default function Contact() {
 
   const innerContent = <ul className="w-full max-w-[480px] my-4 flex flex-col items-center lg:py-6">{links}</ul>;
 
-  return <Section id="contact" title="Contacto" innerContent={innerContent} />;
+  return <Section id="contact" title="Contact" innerContent={innerContent} />;
 }

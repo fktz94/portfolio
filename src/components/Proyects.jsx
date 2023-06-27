@@ -63,7 +63,7 @@ export default function Proyect() {
               link={{
                 classList:
                   'text-sm my-1 text-[color:var(--white-color)] hover:text-[color:var(--secondary-hover-color)]',
-                text: 'Ir al repositorio',
+                text: 'Go to the repository',
                 url,
               }}
             />
@@ -74,25 +74,18 @@ export default function Proyect() {
         <Button
           buttonStyle="my-3 px-5 py-2 text-sm tracking-wider hover:bg-[color:var(--grey-color)]"
           handleClick={removeShowedProyects}
-          text="Ver menos..."
+          text="See less..."
         />
       )}
       {showedProyects < proyectData.length && (
         <Button
           buttonStyle="my-3 px-5 py-2 text-sm tracking-wider hover:bg-[color:var(--grey-color)]"
           handleClick={handleShowedProyects}
-          text="Ver mas..."
+          text="See more..."
         />
       )}
     </>
   );
 
-  return (
-    <Section
-      id="proyects"
-      title="Portfolio"
-      description="Algunos proyectos en los que he trabajado"
-      innerContent={innerContent}
-    />
-  );
+  return <Section id="proyects" title="Portfolio" description="Projects i've worked on" innerContent={innerContent} />;
 }

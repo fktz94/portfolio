@@ -27,9 +27,8 @@ export default function Main() {
   };
 
   const rightArticleData = [
-    'Hola! Bienvenido a mi página!',
-    'Soy desarrollador web frontend.',
-    'Más abajo podrás ver algunos de mis proyectos.',
+    'I believe in going further, in pushing limits beyond.',
+    'Crafting dreams through technology, forging a limitless future.',
   ];
 
   return (
@@ -68,13 +67,15 @@ export default function Main() {
         <h2 className="text-xl text-center font-light lg:text-2xl lg:tracking-wider text-[color:var(--secondary-hover-color)]">
           Frontend Web Developer
         </h2>
-        {rightArticleData.map((item) => (
-          <p key={item} className="text-sm text-center tracking-wider lg:text-base">
-            {item}
-          </p>
-        ))}
+        <ul>
+          {rightArticleData.map((item) => (
+            <li key={item} className="text-sm tracking-widest my-5 leading-7 lg:text-base">
+              {item}
+            </li>
+          ))}
+        </ul>
         <Button
-          text="PROYECTOS"
+          text="PROJECTS"
           buttonStyle="my-4 px-4 py-3 text-xs font-semibold tracking-widest max-w-fit"
           handleClick={() => goToSection('proyects')}
         />

@@ -55,7 +55,7 @@ export default function Musician() {
 
   const participaciones = (
     <>
-      <h4 className="mx-5 mt-4 md:mt-8 md:mx-10 md:tracking-wide lg:my-8 lg:text-xl">Como bajista:</h4>
+      <h4 className="mx-5 mt-4 md:mt-8 md:mx-10 md:tracking-wide lg:my-8 lg:text-xl">As a bass player:</h4>
       <div className="flex flex-wrap justify-center md:justify-evenly lg:m-auto lg:max-w-5xl">
         {participacionesData.map(({ info, src, url }) => (
           <Cards
@@ -65,7 +65,7 @@ export default function Musician() {
             cardStyles={cardStyles}
             link={{
               classList: 'text-sm my-1 text-[color:var(--white-color)] hover:text-[color:var(--secondary-hover-color)]',
-              text: 'Escuchar disco',
+              text: 'Listen to the disc',
               url,
             }}
           />
@@ -75,10 +75,7 @@ export default function Musician() {
   );
 
   // Parte de 'Trabajos'
-  const trabajosData = [
-    'Prof. particular de instrumento - 2017/act.',
-    'Músico sesionista: grabaciones y conciertos - 2018/act.',
-  ];
+  const trabajosData = ['Instrument teacher - 2017/act.', 'Session musician: recordings and concerts - 2018/act.'];
 
   const trabajos = (
     <StyledList listStyle="m-auto mt-4 md:mt-6 w-3/4" itemStyle="my-3 md:my-5 md:text-lg" listContent={trabajosData} />
@@ -86,9 +83,9 @@ export default function Musician() {
 
   // Parte de 'Estudios'
   const estudiosData = [
-    'Estudiante de bajo eléctrico - 2008/act.',
-    'Prof. en música or. música popular - 2013/2021 - FdA - UNLP',
-    'Lic. en música or. música popular - 2013/2021 - FdA - UNLP',
+    'Electric bass student - 2008/act.',
+    'Teacher Certification in Music - 2013/2021 - FdA - UNLP',
+    `Bachelor's Degree in Music - 2013/2021 - FdA - UNLP`,
   ];
 
   const estudios = (
@@ -103,9 +100,9 @@ export default function Musician() {
         alt="bass profile pic"
       />
       <div className="w-3/4 m-auto my-3">
-        <MusicSection title="Participaciones" innerContent={participaciones} />
-        <MusicSection title="Trabajos" innerContent={trabajos} />
-        <MusicSection title="Estudios" innerContent={estudios} />
+        <MusicSection title="Featurings" innerContent={participaciones} />
+        <MusicSection title="Jobs" innerContent={trabajos} />
+        <MusicSection title="Studies" innerContent={estudios} />
       </div>
     </>
   );
