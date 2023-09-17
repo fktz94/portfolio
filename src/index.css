@@ -182,7 +182,7 @@ a.is-active {
 
 .skills-animation:hover {
   animation-name: skills-animation;
-  animation-duration: 500ms;
+  animation-duration: 300ms;
   background-color: var(--black-color);
   color: var(--secondary-color);
   animation-timing-function: linear;
@@ -194,24 +194,15 @@ a.is-active {
     background-color: var(--black-color);
     color: var(--secondary-color);
   }
-  33% {
-    scale: 1.2;
-    transform: rotateZ(5deg);
-  }
-  66% {
-    scale: 1.4;
-    transform: rotateZ(-5deg);
-  }
   100% {
-    scale: 1.6;
-    transform: rotateZ(0deg);
+    scale: 1.2;
   }
 }
 /* Discs cards hover animation  */
 
 .discs-animation:hover {
   animation-name: skills-animation;
-  animation-duration: 500ms;
+  animation-duration: 300ms;
   background-color: var(--black-color);
   color: var(--secondary-color);
   animation-timing-function: linear;
@@ -223,17 +214,9 @@ a.is-active {
     background-color: var(--black-color);
     color: var(--secondary-color);
   }
-  33% {
-    scale: 1.2;
-    transform: rotateZ(5deg);
-  }
-  66% {
-    scale: 1.4;
-    transform: rotateZ(-5deg);
-  }
+
   100% {
-    scale: 1.6;
-    transform: rotateZ(0deg);
+    scale: 1.2;
   }
 }
 

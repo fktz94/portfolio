@@ -55,7 +55,7 @@ export default function Main() {
         </ul>
         <Button
           buttonStyle="my-4 px-4 py-3 text-xs font-semibold tracking-widest max-w-fit lg:mt-10"
-          text="CONTACTO"
+          text="CONTACT"
           handleClick={() => goToSection('contact')}
         />
       </article>

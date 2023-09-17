@@ -87,5 +87,5 @@ export default function Proyect() {
     </>
   );
 
-  return <Section id="proyects" title="Portfolio" description="Projects i've worked on" innerContent={innerContent} />;
+  return <Section id="proyects" title="Portfolio" description="Projects I've worked on" innerContent={innerContent} />;
 }

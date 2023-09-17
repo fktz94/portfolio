@@ -18,7 +18,7 @@ export default function AboutMe({ handleCurrentPage }) {
     'Discipline of perseverance',
     'Curious and dedicated',
     'Self-taught learner',
-    'Native Spanish speaker.',
+    'Native Spanish speaker',
     'Fluent in English and French',
     'Neat and organized',
   ];

@@ -8,8 +8,36 @@ import memotest from './assets/images/memotest.png';
 import simondice from './assets/images/simondice.png';
 import netflix from './assets/images/netflix.png';
 import moviefinder from './assets/images/moviefinder.png';
+import todolist from './assets/images/todolist.png';
+import password from './assets/images/password.png';
+import moro from './assets/images/moro.png';
+import rickymorty from './assets/images/rickymorty.png';
 
 export default [
+  {
+    info: 'Rick and Morty App',
+    src: rickymorty,
+    url: 'https://rick-and-morty-api-orpin.vercel.app/',
+    ghpage: 'https://github.com/fktz94/RickAndMortyAPI',
+  },
+  {
+    info: 'Moro Shopping Cart',
+    src: moro,
+    url: 'https://entrega-final-ortiz.vercel.app/',
+    ghpage: 'https://github.com/fktz94/EntregaFinal-Ortiz/',
+  },
+  {
+    info: 'Password Generator',
+    src: password,
+    url: 'https://password-generator-sand-tau.vercel.app/',
+    ghpage: 'https://github.com/fktz94/password-generator',
+  },
+  {
+    info: 'ToDoList',
+    src: todolist,
+    url: 'https://todolist-coral-tau.vercel.app/',
+    ghpage: 'https://github.com/fktz94/todolist',
+  },
   {
     info: 'Movie Finder',
     src: moviefinder,
