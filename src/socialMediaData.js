@@ -9,6 +9,6 @@ export default [
   },
   {
     title: 'Instagram',
-    to: 'https://www.instagram.com/facund.ortiz/',
+    to: 'https://www.instagram.com/__facundo.ortiz/',
   },
 ];
