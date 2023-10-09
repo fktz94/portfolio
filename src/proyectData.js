@@ -12,6 +12,7 @@ import todolist from './assets/images/todolist.png';
 import password from './assets/images/password.png';
 import moro from './assets/images/moro.png';
 import rickymorty from './assets/images/rickymorty.png';
+import starwars from './assets/images/starwars.png';
 
 export default [
   {
@@ -19,6 +20,12 @@ export default [
     src: rickymorty,
     url: 'https://rick-and-morty-api-orpin.vercel.app/',
     ghpage: 'https://github.com/fktz94/RickAndMortyAPI',
+  },
+  {
+    info: 'StarWars App',
+    src: starwars,
+    url: 'https://star-wars-gray-six.vercel.app/',
+    ghpage: 'https://github.com/fktz94/starwars',
   },
   {
     info: 'Moro Shopping Cart',
