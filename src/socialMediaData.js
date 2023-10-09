@@ -7,8 +7,4 @@ export default [
     title: 'GitHub',
     to: 'https://github.com/fktz94',
   },
-  {
-    title: 'Instagram',
-    to: 'https://www.instagram.com/__facundo.ortiz/',
-  },
 ];
