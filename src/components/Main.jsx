@@ -10,7 +10,7 @@ function CVButton({ lang, handleClick }) {
   return (
     <button
       type="button"
-      className="p-2 rounded border border-[color:var(--white-hover-color)] min-w-fit w-32 shadow bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] hover:border-[color:var(--secondary-hover-color)]"
+      className="p-2 text-xs md:text-sm rounded border border-[color:var(--white-hover-color)] min-w-fit md:w-32 shadow bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] hover:border-[color:var(--secondary-hover-color)]"
       onClick={() => handleClick(lang)}
     >
       CV {lang.toUpperCase()}
@@ -33,7 +33,6 @@ export default function Main() {
     });
 
   const openModal = (selectedCV) => {
-    console.log(modal[selectedCV]);
     setModal((prev) => ({ ...prev, [selectedCV]: true }));
   };
 
@@ -91,6 +90,10 @@ export default function Main() {
           text="CONTACT"
           handleClick={() => goToSection('contact')}
         />
+        <div className="flex gap-4 mt-4 md:hidden">
+          <CVButton lang="español" handleClick={openModal} />
+          <CVButton lang="english" handleClick={openModal} />
+        </div>
       </article>
 
       <article className="relative w-full h-auto max-w-[180px] md:max-w-[220px] lg:max-w-[300px]">
