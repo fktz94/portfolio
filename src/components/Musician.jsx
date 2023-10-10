@@ -48,7 +48,7 @@ export default function Musician() {
   // (clases que se le envían al componente Card)
   const cardStyles = {
     figureStyle:
-      'my-6 max-w-[200px] z-50 sm:max-w-[45%] justify-between md:max-w-[256px] bg-[color:var(--black-hover-color)] hover:scale-125  hover:bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] transition duration-300 hover:z-[60]',
+      'my-6 max-w-[200px] z-50 sm:max-w-[45%] justify-between md:max-w-[256px] bg-[color:var(--black-hover-color)] hover:scale-110  hover:bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] transition duration-150 hover:z-[60]',
     imgStyle: 'p-2 rounded-2xl',
     figcaptionStyle: 'text-xl my-1 text-center',
   };

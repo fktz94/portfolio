@@ -4,9 +4,39 @@ import Button from './Button';
 
 import portfolioMain from '../assets/images/portfolio-main.png';
 import react from '../assets/images/react.svg';
+import Modal from './Modal';
 
+function CVButton({ lang, handleClick }) {
+  return (
+    <button
+      type="button"
+      className="p-2 rounded border border-[color:var(--white-hover-color)] min-w-fit w-32 shadow bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)] hover:border-[color:var(--secondary-hover-color)]"
+      onClick={() => handleClick(lang)}
+    >
+      CV {lang.toUpperCase()}
+    </button>
+  );
+}
 export default function Main() {
+  const cvSpanish = 'https://onedrive.live.com/embed?resid=A9807B9C16DCCE17%213041&authkey=!ALX0Taph14xEEaU&em=2';
+  const cvEnglish = 'https://onedrive.live.com/embed?resid=A9807B9C16DCCE17%213043&authkey=!ALf11pkkfOSv8CA&em=2';
   // agregar padding al scrollTo para ajustar, debido al cambio de tamaño del header
+  const [modal, setModal] = useState({
+    español: false,
+    english: false,
+  });
+
+  const closeModal = () =>
+    setModal({
+      español: false,
+      english: false,
+    });
+
+  const openModal = (selectedCV) => {
+    console.log(modal[selectedCV]);
+    setModal((prev) => ({ ...prev, [selectedCV]: true }));
+  };
+
   const [windowSize, detectSize] = useState(window.innerWidth);
   const getSize = () => {
     detectSize(window.innerWidth);
@@ -26,17 +56,15 @@ export default function Main() {
     window.scrollTo(0, proyectsOffsetY - paddingAdded);
   };
 
-  const rightArticleData = [
-    'I believe in going further, in pushing limits beyond.',
-    'Crafting dreams through technology, forging a limitless future.',
-  ];
-
   return (
     <main
       className="relative px-6 py-4 sm:pb-8 md:px-12 md:py-14 md:mb-10 flex justify-center overflow-hidden"
       id="main"
       data-scroll
     >
+      {modal.english && <Modal src={cvEnglish} handleClose={closeModal} />}
+      {modal.español && <Modal src={cvSpanish} handleClose={closeModal} />}
+
       <article className="w-full max-w-[250px] flex-col justify-between sm:max-w-[350px] md:min-w-[250px] md:max-w-[350px] md:flex lg:max-w-[410px]">
         <h1 className="text-4xl font-medium tracking-wide md:text-5xl md:font-semibold md:tracking-tight ">
           Facundo
@@ -47,7 +75,12 @@ export default function Main() {
         <ul>
           {socialMediaData.map(({ title, to }) => (
             <li key={title} className="pt-1 lg:pt-3">
-              <a href={to} className="hover:text-[color:var(--secondary-color)]" target="_blank" rel="noreferrer">
+              <a
+                href={to}
+                className="inline-block text-center px-1 py-1 rounded border border-[color:var(--black-hover-color)] min-w-fit w-[25%] shadow bg-[color:var(--black-color)] hover:text-[color:var(--secondary-color)]"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {title}
               </a>
             </li>
@@ -59,21 +92,20 @@ export default function Main() {
           handleClick={() => goToSection('contact')}
         />
       </article>
+
       <article className="relative w-full h-auto max-w-[180px] md:max-w-[220px] lg:max-w-[300px]">
         <div id="main-bg" className="absolute h-32 w-32 rounded-full bg-[color:var(--black-hover-color)]" />
         <img id="main-img" className="absolute brightness-150" src={portfolioMain} alt="foto de perfil" />
       </article>
+
       <article className="hidden items-center md:flex flex-col justify-between md:max-w-[250px] z-50">
         <h2 className="text-xl text-center font-light lg:text-2xl lg:tracking-wider text-[color:var(--secondary-hover-color)]">
           Frontend Web Developer
         </h2>
-        <ul>
-          {rightArticleData.map((item) => (
-            <li key={item} className="text-sm tracking-widest my-5 leading-7 lg:text-base">
-              {item}
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col gap-6">
+          <CVButton lang="español" handleClick={openModal} />
+          <CVButton lang="english" handleClick={openModal} />
+        </div>
         <Button
           text="PROJECTS"
           buttonStyle="my-4 px-4 py-3 text-xs font-semibold tracking-widest max-w-fit"
