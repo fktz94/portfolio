@@ -18,8 +18,10 @@ function CVButton({ lang, handleClick }) {
   );
 }
 export default function Main() {
-  const cvSpanish = 'https://onedrive.live.com/embed?resid=A9807B9C16DCCE17%213041&authkey=!ALX0Taph14xEEaU&em=2';
-  const cvEnglish = 'https://onedrive.live.com/embed?resid=A9807B9C16DCCE17%213043&authkey=!ALf11pkkfOSv8CA&em=2';
+  const cvSpanish = 'https://onedrive.live.com/embed?resid=A9807B9C16DCCE17%213058&authkey=!AIcHLXuq78TaNdQ&em=2';
+
+  const cvEnglish = 'https://onedrive.live.com/embed?resid=A9807B9C16DCCE17%213059&authkey=!AIX2XadiFYEWR1c&em=2';
+
   // agregar padding al scrollTo para ajustar, debido al cambio de tamaño del header
   const [modal, setModal] = useState({
     español: false,
