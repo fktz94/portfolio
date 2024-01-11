@@ -13,8 +13,14 @@ import password from './assets/images/password.png';
 import moro from './assets/images/moro.png';
 import rickymorty from './assets/images/rickymorty.png';
 import starwars from './assets/images/starwars.png';
+import crudclubes from './assets/images/crudclubes.png';
 
 export default [
+  {
+    info: 'CRUD Clubes',
+    src: crudclubes,
+    url: 'https://github.com/fktz94/crud-clubes',
+  },
   {
     info: 'Rick and Morty App',
     src: rickymorty,
